@@ -164,7 +164,7 @@ export function Root() {
                 <p className="text-slate-400 text-sm">
                   &copy; 2026 AI Software Consultant. All rights reserved.
                 </p>
-                <span className="text-slate-500 text-sm">v0.1.0</span>
+                <span className="text-slate-500 text-sm">v0.2.0</span>
               </div>
               <div className="flex gap-6">
                 <Link to="/terms" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
