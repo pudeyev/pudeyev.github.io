@@ -92,7 +92,7 @@ export function Services() {
             className="absolute inset-0 w-full h-full object-cover opacity-50"
             poster="https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920"
           >
-            <source src="https://cdn.pixabay.com/video/2020/05/17/38866-421162608_large.mp4" type="video/mp4" />
+            <source src="https://d15g8hc4183yn4.cloudfront.net/wp-content/uploads/2026/04/22135020/27669-365224683.mp4" type="video/mp4" />
           </video>
         </div>
 
