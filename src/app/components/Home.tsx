@@ -1,6 +1,9 @@
 import { Link } from "react-router";
 import { Brain, Sparkles, Mail, Linkedin, Github, ChevronRight, Cpu, Database, Network, Code } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export function Home() {
   return (
@@ -141,6 +144,65 @@ export function Home() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-6 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-700">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-white text-center mb-12">AI Innovation Showcase</h2>
+          <div className="max-w-5xl mx-auto">
+            <Slider
+              dots={true}
+              infinite={true}
+              speed={500}
+              slidesToShow={1}
+              slidesToScroll={1}
+              autoplay={true}
+              autoplaySpeed={4000}
+              arrows={true}
+              className="ai-slider"
+            >
+              <div className="px-4">
+                <div className="relative">
+                  <ImageWithFallback
+                    src="https://images.unsplash.com/photo-1776106905694-6226a396da7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGF0YSUyMHZpc3VhbGl6YXRpb258ZW58MXx8fHwxNzc2ODc4NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="AI Data Visualization"
+                    className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-8 rounded-b-2xl">
+                    <h3 className="text-2xl font-bold text-white mb-2">Advanced Data Analytics</h3>
+                    <p className="text-slate-300">Transform raw data into actionable insights with AI-powered analytics</p>
+                  </div>
+                </div>
+              </div>
+              <div className="px-4">
+                <div className="relative">
+                  <ImageWithFallback
+                    src="https://images.unsplash.com/photo-1761912149936-8f662fc2a13e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGF0YSUyMHZpc3VhbGl6YXRpb258ZW58MXx8fHwxNzc2ODc4NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="Neural Network"
+                    className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-8 rounded-b-2xl">
+                    <h3 className="text-2xl font-bold text-white mb-2">Neural Networks & Deep Learning</h3>
+                    <p className="text-slate-300">Cutting-edge machine learning models for complex problem solving</p>
+                  </div>
+                </div>
+              </div>
+              <div className="px-4">
+                <div className="relative">
+                  <ImageWithFallback
+                    src="https://images.unsplash.com/photo-1765046255479-669cf07a0230?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGF0YSUyMHZpc3VhbGl6YXRpb258ZW58MXx8fHwxNzc2ODc4NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                    alt="AI Patterns"
+                    className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-8 rounded-b-2xl">
+                    <h3 className="text-2xl font-bold text-white mb-2">Intelligent Automation</h3>
+                    <p className="text-slate-300">Streamline operations with AI-driven process automation</p>
+                  </div>
+                </div>
+              </div>
+            </Slider>
           </div>
         </div>
       </section>

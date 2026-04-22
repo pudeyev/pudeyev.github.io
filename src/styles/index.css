@@ -1,3 +1,68 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* Slider Styles */
+.ai-slider .slick-prev,
+.ai-slider .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.ai-slider .slick-prev {
+  left: 25px;
+}
+
+.ai-slider .slick-next {
+  right: 25px;
+}
+
+.ai-slider .slick-prev:before,
+.ai-slider .slick-next:before {
+  font-size: 50px;
+  opacity: 0.75;
+  color: #60a5fa;
+}
+
+.ai-slider .slick-prev:hover:before,
+.ai-slider .slick-next:hover:before {
+  opacity: 1;
+}
+
+.ai-slider .slick-dots {
+  bottom: 25px;
+}
+
+.ai-slider .slick-dots li button:before {
+  font-size: 12px;
+  color: #60a5fa;
+  opacity: 0.5;
+}
+
+.ai-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #60a5fa;
+}
+
+/* Animated Background */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}

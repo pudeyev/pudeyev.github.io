@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Cpu, Database, Network, Brain, Code2, Boxes, Cloud, LineChart, Sparkles, CheckCircle2, ChevronRight } from 'lucide-react';
+import { Cpu, Database, Network, Brain, Code2, Boxes, Cloud, LineChart, Sparkles, CheckCircle2, ChevronRight, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Expertise() {
@@ -96,7 +96,9 @@ export function Expertise() {
   const specializations = [
     {
       title: "Large Language Models",
-      items: ["Fine-tuning GPT models", "Prompt engineering", "RAG systems", "Custom chatbots", "Semantic search"]
+      items: ["Fine-tuning GPT models", "Prompt engineering", "RAG systems", "Custom chatbots", "Semantic search"],
+      link: "/expertise/large-language-models",
+      
     },
     {
       title: "Computer Vision",
@@ -184,7 +186,7 @@ export function Expertise() {
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{area.title}</h3>
                   <p className="text-slate-400 text-sm mb-4">{area.description}</p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-4">
                     {area.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className="flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
@@ -192,6 +194,15 @@ export function Expertise() {
                       </li>
                     ))}
                   </ul>
+                  {index === 0 && (
+                    <Link
+                      to="/expertise/large-language-models"
+                      className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                    >
+                      Explore LLMs
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  )}
                 </div>
               );
             })}
@@ -207,7 +218,9 @@ export function Expertise() {
               <div key={index} className="bg-slate-900/50 border border-slate-700 rounded-xl p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <Boxes className="w-6 h-6 text-blue-400" />
-                  <h3 className="text-2xl font-semibold text-white">{spec.title}</h3>
+                  <Link to={spec.link}>
+                    <h3 className="text-2xl font-semibold text-white">{spec.title}</h3>
+                  </Link>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {spec.items.map((item, itemIndex) => (
