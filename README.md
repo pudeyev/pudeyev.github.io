@@ -8,4 +8,13 @@
   Run `npm i` to install the dependencies.
 
   Run `npm run dev` to start the development server.
+
+  ## Matomo analytics setup
+
+  Add these variables to your local `.env` (or environment-specific `.env.*`) file:
+
+  - `VITE_MATOMO_URL` (example: `https://analytics.example.com`)
+  - `VITE_MATOMO_SITE_ID` (example: `1`)
+
+  Matomo tracking is enabled only when both variables are set.
   

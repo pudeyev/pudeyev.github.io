@@ -1,9 +1,11 @@
 import { Outlet, Link } from "react-router";
 import { Brain, Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { MatomoTracker } from "./MatomoTracker";
 
 export function Root() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <MatomoTracker />
       <nav className="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-700 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
