@@ -233,13 +233,13 @@ export function Services() {
             possibilities.
           </p>
           <div className="flex justify-center gap-4">
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg flex items-center gap-2 transition-colors"
             >
               Contact Me
               <ChevronRight className="w-5 h-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

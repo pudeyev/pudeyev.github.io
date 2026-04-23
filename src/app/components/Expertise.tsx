@@ -259,10 +259,10 @@ export function Expertise() {
             Ready to leverage cutting-edge AI technology for your business? Let's explore how my expertise can help.
           </p>
           <div className="flex justify-center gap-4">
-            <a href="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg flex items-center gap-2 transition-colors">
+            <Link to="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg flex items-center gap-2 transition-colors">
               Get in Touch
               <ChevronRight className="w-5 h-5" />
-            </a>
+            </Link>
             <Link to="/services" className="bg-slate-800 hover:bg-slate-700 text-white px-8 py-3 rounded-lg transition-colors">
               View Services
             </Link>

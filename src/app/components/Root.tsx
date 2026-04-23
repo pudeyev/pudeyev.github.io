@@ -1,7 +1,10 @@
 import { Outlet, Link, useLocation } from "react-router";
 import { Brain, Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { useAnalytics, useScrollToTop } from "../useHooks";
 
 export function Root() {
+  useAnalytics();
+  useScrollToTop();
   const location = useLocation();
 
   const isActive = (path: string) => {
@@ -164,7 +167,7 @@ export function Root() {
                 <p className="text-slate-400 text-sm">
                   &copy; 2026 AI Software Consultant. All rights reserved.
                 </p>
-                <span className="text-slate-500 text-sm">version 0.2.1</span>
+                <span className="text-slate-500 text-sm">version 0.2.2</span>
               </div>
               <div className="flex gap-6">
                 <Link to="/terms" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
