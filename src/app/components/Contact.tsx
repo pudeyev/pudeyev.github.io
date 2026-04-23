@@ -44,7 +44,9 @@ export function Contact() {
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Send a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+
+              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
+                <input type="hidden" name="access_key" value="21d1ad20-3db9-4fe2-bf74-f19ed335113d"></input>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                     Name *
@@ -137,8 +139,8 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                      <a href="mailto:contact@example.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                        contact@example.com
+                      <a href="mailto:pudeyev@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                        pudeyev@gmail.com
                       </a>
                       <p className="text-slate-400 text-sm mt-1">I typically respond within 24 hours</p>
                     </div>
@@ -175,7 +177,7 @@ export function Contact() {
                   <h3 className="text-lg font-semibold text-white mb-4">Connect on Social</h3>
                   <div className="flex gap-4">
                     <a
-                      href="https://linkedin.com"
+                      href="https://linkedin.com/in/piousbox"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-slate-900/50 border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-500 hover:bg-blue-500/10 transition-all"
@@ -183,7 +185,7 @@ export function Contact() {
                       <Linkedin className="w-6 h-6 text-slate-300" />
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/piousbox"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-12 h-12 bg-slate-900/50 border border-slate-700 rounded-lg flex items-center justify-center hover:border-blue-500 hover:bg-blue-500/10 transition-all"

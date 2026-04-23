@@ -3,10 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "scripts": {
-    "build": "vite build",
-    "dev": "vite"
-  },
+
   "dependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
@@ -87,5 +84,9 @@
     "overrides": {
       "vite": "6.3.5"
     }
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
   }
 }

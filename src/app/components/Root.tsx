@@ -67,7 +67,7 @@ export function Root() {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/piousbox"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg flex items-center justify-center transition-colors"
@@ -75,7 +75,7 @@ export function Root() {
                   <Linkedin className="w-5 h-5 text-slate-300" />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/piousbox"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-lg flex items-center justify-center transition-colors"
@@ -142,8 +142,8 @@ export function Root() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-2">
                   <Mail className="w-4 h-4 text-blue-400 mt-0.5 flex-shrink-0" />
-                  <a href="mailto:contact@example.com" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
-                    contact@example.com
+                  <a href="mailto:pudeyev@gmail.com" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
+                    pudeyev@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-2">
@@ -164,7 +164,7 @@ export function Root() {
                 <p className="text-slate-400 text-sm">
                   &copy; 2026 AI Software Consultant. All rights reserved.
                 </p>
-                <span className="text-slate-500 text-sm">v0.2.0</span>
+                <span className="text-slate-500 text-sm">version 0.2.1</span>
               </div>
               <div className="flex gap-6">
                 <Link to="/terms" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">
