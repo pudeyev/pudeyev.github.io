@@ -1,3 +1,4 @@
 0.0.0 :: 2026-04-22 :: added matomo?
 0.2.0 ::               latest version.
-0.2.2                  better contact form, better email, scroll to top.
+0.2.3                  better contact form, better email, scroll to top.
+                       its own branch. cleaner.
