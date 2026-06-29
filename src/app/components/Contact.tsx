@@ -44,89 +44,7 @@ export function Contact() {
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div>
               <h2 className="text-3xl font-bold text-white mb-6">Send a Message</h2>
-
-              <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
-                <input type="hidden" name="access_key" value="21d1ad20-3db9-4fe2-bf74-f19ed335113d"></input>
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
-                    Name *
-                  </label>
-                  <div className="relative">
-                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-12 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="Your name"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-                    Email *
-                  </label>
-                  <div className="relative">
-                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-12 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-slate-300 mb-2">
-                    Company
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors"
-                    placeholder="Your company name"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
-                    Message *
-                  </label>
-                  <div className="relative">
-                    <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-slate-400" />
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={6}
-                      className="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-12 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                      placeholder="Tell me about your project..."
-                    />
-                  </div>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg flex items-center justify-center gap-2 transition-colors font-medium"
-                >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </form>
+              <p>You may send me an email, linkedin message, or a text. I look forward to hearing from you!</p>
             </div>
 
             <div>
@@ -139,10 +57,10 @@ export function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                      <a href="mailto:pudeyev@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                        pudeyev@gmail.com
-                      </a>
-                      <p className="text-slate-400 text-sm mt-1">I typically respond within 24 hours</p>
+                      <div className="text-blue-400 hover:text-blue-300 transition-colors">
+                        pudeyev at gmail dot com
+                      </div>
+                      <p className="text-slate-400 text-sm mt-1">I typically respond within 96 hours.</p>
                     </div>
                   </div>
                 </div>
